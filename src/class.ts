@@ -22,6 +22,7 @@ class Admin extends User {
   read: boolean = true;
   write: boolean = true;
   private _email: string = '';
+  static getRoleName: string = 'Admin';
 
   constructor(
     public name: string,
@@ -50,10 +51,18 @@ class Admin extends User {
   get email(): string {
     return this._email;
   }
+
+  static getNameRole(): string {
+    return 'Hei';
+  }
 }
 
-let admin = new Admin('Tonyhawk', 31, '089507854000');
-console.log(admin);
+// let admin = new Admin('Tonyhawk', 31, '089507854000');
+// console.log(admin);
 
-admin.email = 'a@a.c';
-console.log(admin.email);
+// admin.email = 'a@a.c';
+// console.log(admin.email);
+
+let admin = Admin.getRoleName;
+console.log(admin);
+console.log(Admin.getNameRole());
