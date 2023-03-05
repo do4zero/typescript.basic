@@ -18,3 +18,8 @@ heroes = 20;
 heroes = [];
 heroes = {};
 heroes = true || false || 'string';
+
+// union type
+let phone: number | string;
+phone = 6289507854000;
+phone = '089507854000';

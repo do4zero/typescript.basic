@@ -41,3 +41,19 @@ type Tambah = (val1: number, val2: number) => number;
 const Add: Tambah = (val1: number, val2: number): number => {
   return val1 + val2;
 };
+
+// default parameter
+const fullName = (
+  firstName: string = 'Luthfi',
+  lastName: string = 'Aziz'
+): string => {
+  return firstName + ' ' + lastName;
+};
+console.log(fullName());
+
+// optional parameter
+const getUmur = (value1: number, value2?: number): number => {
+  return value1 + (value2 ?? 0);
+};
+
+console.log(getUmur(20, 40));

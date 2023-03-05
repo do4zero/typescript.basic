@@ -26,3 +26,13 @@ let age;
 const Add = (val1, val2) => {
     return val1 + val2;
 };
+// default parameter
+const fullName = (firstName = 'Luthfi', lastName = 'Aziz') => {
+    return firstName + ' ' + lastName;
+};
+console.log(fullName());
+// optional parameter
+const getUmur = (value1, value2) => {
+    return value1 + (value2 !== null && value2 !== void 0 ? value2 : 0);
+};
+console.log(getUmur(20, 40));
