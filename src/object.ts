@@ -1,11 +1,11 @@
 // Object
 
-type User = {
+type Users = {
   name: string;
   age: number;
 };
 
-let user: User = {
+let users: Users = {
   name: 'Luthfi',
   age: 31,
 };

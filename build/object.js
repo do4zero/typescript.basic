@@ -1,6 +1,6 @@
 "use strict";
 // Object
-let user = {
+let users = {
     name: 'Luthfi',
     age: 31,
 };
